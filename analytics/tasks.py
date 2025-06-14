@@ -83,6 +83,7 @@ def analyze_data():
     weekly = df_prod["line_total"].resample("W-MON").sum()
     forecast = weekly.tail(3).mean() if len(weekly)>=3 else weekly.mean()
 
+
     return {
         "customer_stats_sample": stats[["name","last_visit","avg_interval_days","next_visit_pred"]]
                                     .head(5)
