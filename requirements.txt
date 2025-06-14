@@ -1,0 +1,8 @@
+Django>=4.0
+djangorestframework
+drf-yasg
+celery
+redis
+django-celery-results
+pandas
+XlsxWriter
